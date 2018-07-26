@@ -8,7 +8,7 @@ gem 'devise'
 gem 'bootstrap', '~> 4.1.2'
 gem 'jquery-rails'
 gem 'webpacker', '~> 3.5'
-
+gem 'react-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
