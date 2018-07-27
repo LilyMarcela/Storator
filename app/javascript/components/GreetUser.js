@@ -4,6 +4,7 @@ class GreetUser extends React.Component {
   render () {
     return (
       <div>
+      
         <h1> Hello {this.props.name}, </h1> 
         <h3> Wow, this is React </h3>
 

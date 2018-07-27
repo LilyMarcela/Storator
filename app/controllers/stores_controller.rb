@@ -1,4 +1,4 @@
-class StoreController < ApplicationController
+class StoresController < ApplicationController
   before_action :authenticate_user!
 
   def index
@@ -22,8 +22,8 @@ class StoreController < ApplicationController
   end
 
   def create
-    @store = Store.new()
-    @store.save
+    @store = Store.new(store_params)
+    @store.save!
   end
 
   def destroy
@@ -38,7 +38,7 @@ class StoreController < ApplicationController
   end
 
   def store_params
-    params.require(:store).permit(:store_name)
+    params.require(:store).permit(:store_name, :slogan, :description, :photo)
   end
 
 end
