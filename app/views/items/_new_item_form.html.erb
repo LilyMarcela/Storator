@@ -1,4 +1,4 @@
-<%= form_for @item, :html => {:class => "form-horizontal center"} do 
+<%= form_for @item, url: store_items_path, :html => {:class => "form-horizontal center"} do 
     |f| %>
     <div class="form-group">
       <%= f.label :item_name, "Item name", class: "col-md-4 control label" %>

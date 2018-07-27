@@ -9,6 +9,7 @@
     
     <p>Add items to your store</p>
     <p>Manage your items</p>
+    <div><%= link_to 'Add',  new_store_item_path(@store.id), method: :get, class: 'btn btn-primary' %><div>
     <p>Delete your store</p>
     <div><%= link_to 'Delete',  "/stores/#{@store.id}", method: :delete, class: 'btn btn-danger' %><div>
 
