@@ -18,16 +18,23 @@ class StoresController < ApplicationController
   end 
 
   def update
+    find_store
     @store.update(store_params)
   end
 
   def create
     @store = Store.new(store_params)
+    @store.user_id = current_user.id
     @store.save!
   end
 
   def destroy
+    find_store
     @store.destroy
+  end
+
+  def admin_panel
+    @store = Store.find(params[:id])
   end
 
 
