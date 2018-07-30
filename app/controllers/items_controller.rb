@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    find_item
     @item.destroy
   end
 
