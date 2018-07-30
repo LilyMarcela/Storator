@@ -3,17 +3,17 @@
 
 <div>
     <p>View your store</p>
-    <div><%= link_to 'View',  "/stores/#{@store.id}", method: :get, class: 'btn btn-primary' %><div>
+    <div><%= link_to 'View store',  "/stores/#{@store.id}", method: :get, class: 'btn btn-primary' %><div>
     <p>Edit your store</p>
-    <div><%= link_to 'Edit',  "/stores/#{@store.id}/edit", method: :get, class: 'btn btn-primary' %><div>
+    <div><%= link_to 'Edit your store',  "/stores/#{@store.id}/edit", method: :get, class: 'btn btn-primary' %><div>
     <p>Manage your items</p>
-    <div><%= link_to 'Items',  store_items_path(@store.id), method: :get, class: 'btn btn-primary' %><div>
+    <div><%= link_to 'Manage Items',  store_items_path(@store.id), method: :get, class: 'btn btn-primary' %><div>
 
     <p>Add items to your store</p>
     
-    <div><%= link_to 'Add',  new_store_item_path(@store.id), method: :get, class: 'btn btn-primary' %><div>
+    <div><%= link_to 'Add a new Item',  new_store_item_path(@store.id), method: :get, class: 'btn btn-primary' %><div>
     <p>Delete your store</p>
-    <div><%= link_to 'Delete',  "/stores/#{@store.id}", method: :delete, class: 'btn btn-danger' %><div>
+    <div><%= link_to 'Delete your store',  "/stores/#{@store.id}", method: :delete, class: 'btn btn-danger' %><div>
 
 </div>
 

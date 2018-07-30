@@ -1,3 +1,10 @@
 <div><%= @item.item_name %></div>
 <div><%= @item.description %></div>
 <div style="width: 500px"><img class="card-img-top" src="<%= @item.photo %>" alt=""></div>
+
+<div><%= link_to 'Back',  store_path, method: :get, class: 'btn btn-primary' %><div>
+</div>
+
+
+<div><%= link_to 'Remove Item',  "/items/#{@item.id}", method: :delete, class: 'btn btn-danger' %><div>
+ <div><%= link_to 'Edit',  new_store_item_path, method: :get, class: 'btn btn-primary' %><div>
