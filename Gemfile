@@ -9,7 +9,7 @@ gem 'bootstrap', '~> 4.1.2'
 gem 'jquery-rails'
 gem 'webpacker', '~> 3.5'
 gem 'react-rails'
-
+gem 'seed_dump'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'

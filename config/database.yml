@@ -13,10 +13,10 @@ development:
   adapter: postgresql
   encoding: unicode
   database: storator_test_development
-  username: lilypotter
+  username: lein
   pool: 5
   timeout: 5000
-  password: "POTTER"
+  password: 'POTTER'
  
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: storator_test_development
-  username: lilypotter
+  username: lein
   timeout: 5000
-  password: "POTTER"
+  password: 'POTTER'
 
