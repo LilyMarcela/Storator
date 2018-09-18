@@ -103,7 +103,8 @@
             </div>
             <div class="card-footer">
               
-              <a href="/stores/<%= @store.id%>/items/<%= item.id%>" class="btn btn-primary">Details</a>
+              <%= link_to 'Details',  store_item_path(:store_id), method: :get, class: 'btn btn-primary' %>
+
             </div>
           </div>
         </div>
